@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>--session spiral_180_mus1_list_0 --root D:\Results\MonteCarlo_LSFM\SPIM_OPT\Spiral_180_mus1\ -f D:\Results\MonteCarlo_LSFM\SPIM_OPT\Spiral_180_mus1\spiral_180_mus1_list_0.json --outputformat mc2 --gpu 1 --photon 147000000 --normalize 1 --save2pt 1 --reflect 0 --savedet 1 --srcfrom0 1 --saveseed 0 --specular 0 --array 0 --dumpmask 0 --repeat 1 -w XVWL  --bc aaaaaa
+</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerDebuggerType>NativeOnly</LocalDebuggerDebuggerType>
+  </PropertyGroup>
+</Project>

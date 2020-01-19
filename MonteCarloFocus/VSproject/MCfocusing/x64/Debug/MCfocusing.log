@@ -1,0 +1,597 @@
+﻿  Compiling CUDA source file ..\..\src\focusKernel.cu...
+  
+  D:\Code\MonteCarloFocus\MonteCarloFocus\VSproject\MCfocusing>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_70,code=\"sm_70,compute_70\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G -lineinfo  --keep-dir x64\Debug -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static  -g   -DDEBUG -DWIN32 -DWIN64 -DDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\MCfocusing.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\focusKernel.cu.obj "D:\Code\MonteCarloFocus\MonteCarloFocus\src\focusKernel.cu" 
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(19): warning C4005: 'DEBUG': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(49): warning C4005: 'CUDA_ERROR_CHECK': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(914): warning C4002: too many arguments for function-like macro invocation 'CUDA_ERROR_CHECK'
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(752): warning : variable "photonsOrigin" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(859): warning : variable "nChunks" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning : variable "photonsPerChunk" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning : variable "remainingPhotons" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(870): warning : variable "tmp" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(871): warning : variable "dataFile" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(872): warning : variable "Nphotons" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(874): warning : variable "focused" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(19): warning C4005: 'DEBUG': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(49): warning C4005: 'CUDA_ERROR_CHECK': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(914): warning C4002: too many arguments for function-like macro invocation 'CUDA_ERROR_CHECK'
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(752): warning : variable "photonsOrigin" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(859): warning : variable "nChunks" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning : variable "photonsPerChunk" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning : variable "remainingPhotons" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(870): warning : variable "tmp" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(871): warning : variable "dataFile" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(872): warning : variable "Nphotons" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(874): warning : variable "focused" was declared but never referenced
+  
+CUDACOMPILE : ptxas warning : Conflicting options --device-debug and --generate-line-info specified, ignoring --generate-line-info option
+  ptxas info    : 260 bytes gmem, 136 bytes cmem[3]
+  ptxas info    : Compiling entry function '_Z17set_focusDistancefi' for 'sm_30'
+  ptxas info    : Function properties for _Z17set_focusDistancefi
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 9 registers, 328 bytes cmem[0]
+  ptxas info    : Function properties for _ZN4dim3C1Ejjj
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z19set_photonDirectionP6photonPfm' for 'sm_30'
+  ptxas info    : Function properties for _Z19set_photonDirectionP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 20 registers, 340 bytes cmem[0]
+  ptxas info    : Function properties for ceilf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z16print_photonDataP6photonm' for 'sm_30'
+  ptxas info    : Function properties for _Z16print_photonDataP6photonm
+      24 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 22 registers, 24 bytes cumulative stack size, 332 bytes cmem[0]
+  ptxas info    : Function properties for sincosf
+      48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z12focus4F_autoP6photonPfPj' for 'sm_30'
+  ptxas info    : Function properties for _Z12focus4F_autoP6photonPfPj
+      40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 36 registers, 152 bytes cumulative stack size, 344 bytes cmem[0], 16 bytes cmem[2]
+  ptxas info    : Function properties for __uAtomicAdd
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z13photonRefractP6photonf
+      64 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+  ptxas info    : Compiling entry function '_Z20print_photonPositionP6photonm' for 'sm_30'
+  ptxas info    : Function properties for _Z20print_photonPositionP6photonm
+      32 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 18 registers, 32 bytes cumulative stack size, 332 bytes cmem[0]
+  ptxas info    : Function properties for __float2int_rn
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z16set_photonWeightP6photonPfm' for 'sm_30'
+  ptxas info    : Function properties for _Z16set_photonWeightP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 19 registers, 340 bytes cmem[0]
+  ptxas info    : Function properties for __float2uint_rn
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z12print_photonP6photon
+      48 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+  ptxas info    : Compiling entry function '_Z19output_addingKernelPfS_i' for 'sm_30'
+  ptxas info    : Function properties for _Z19output_addingKernelPfS_i
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 11 registers, 340 bytes cmem[0]
+  ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000059e8_00000000_9_focusKernel_compute_75_cpp1_ii_3b34e8de9atomicAddEPjj
+      16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+  ptxas info    : Function properties for _Z19checkLensAcceptanceP6photonf
+      16 bytes stack frame, 16 bytes spill stores, 16 bytes spill loads
+  ptxas info    : Compiling entry function '_Z14set_photonDataP6photonPfji' for 'sm_30'
+  ptxas info    : Function properties for _Z14set_photonDataP6photonPfji
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 26 registers, 344 bytes cmem[0], 8 bytes cmem[2]
+  ptxas info    : Function properties for acosf
+      8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+  ptxas info    : Compiling entry function '_Z20print_focusConfigGPUv' for 'sm_30'
+  ptxas info    : Function properties for _Z20print_focusConfigGPUv
+      24 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 21 registers, 24 bytes cumulative stack size, 320 bytes cmem[0]
+  ptxas info    : Function properties for sinf
+      48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z7focus4FP6photonPf' for 'sm_30'
+  ptxas info    : Function properties for _Z7focus4FP6photonPf
+      40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 36 registers, 152 bytes cumulative stack size, 336 bytes cmem[0], 16 bytes cmem[2]
+  ptxas info    : Function properties for fdividef
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z10photonPropP6photonf
+      16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+  ptxas info    : Compiling entry function '_Z7illTestv' for 'sm_30'
+  ptxas info    : Function properties for _Z7illTestv
+      16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 18 registers, 16 bytes cumulative stack size, 320 bytes cmem[0]
+  ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000059e8_00000000_9_focusKernel_compute_75_cpp1_ii_3b34e8de9atomicAddEPff
+      16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+  ptxas info    : Function properties for _Z12detectPhotonP6photonPf
+      88 bytes stack frame, 52 bytes spill stores, 52 bytes spill loads
+  ptxas info    : Compiling entry function '_Z18set_photonPositionP6photonPfm' for 'sm_30'
+  ptxas info    : Function properties for _Z18set_photonPositionP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 28 registers, 340 bytes cmem[0], 8 bytes cmem[2]
+  ptxas info    : Function properties for rsqrtf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z11set_photonsjfi' for 'sm_30'
+  ptxas info    : Function properties for _Z11set_photonsjfi
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 10 registers, 332 bytes cmem[0]
+  ptxas info    : Function properties for _ZN4dim3C2Ejjj
+      24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+  ptxas info    : Compiling entry function '_Z16set_photonOriginP6float3Pfm' for 'sm_30'
+  ptxas info    : Function properties for _Z16set_photonOriginP6float3Pfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 26 registers, 340 bytes cmem[0]
+  ptxas info    : Function properties for sqrtf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z4ceilf
+      8 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+  ptxas info    : Compiling entry function '_Z12addingKernelPfj' for 'sm_30'
+  ptxas info    : Function properties for _Z12addingKernelPfj
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 13 registers, 332 bytes cmem[0]
+  ptxas info    : Function properties for __fAtomicAdd
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z10checkPupilP6photonf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z21prepare_MCXphotonDataP6photon' for 'sm_30'
+  ptxas info    : Function properties for _Z21prepare_MCXphotonDataP6photon
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 24 registers, 328 bytes cmem[0], 8 bytes cmem[2]
+  ptxas info    : Function properties for expf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(19): warning C4005: 'DEBUG': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(49): warning C4005: 'CUDA_ERROR_CHECK': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(914): warning C4002: too many arguments for function-like macro invocation 'CUDA_ERROR_CHECK'
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(752): warning : variable "photonsOrigin" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(859): warning : variable "nChunks" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning : variable "photonsPerChunk" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning : variable "remainingPhotons" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(870): warning : variable "tmp" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(871): warning : variable "dataFile" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(872): warning : variable "Nphotons" was declared but never referenced
+  
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(874): warning : variable "focused" was declared but never referenced
+  
+CUDACOMPILE : ptxas warning : Conflicting options --device-debug and --generate-line-info specified, ignoring --generate-line-info option
+  ptxas info    : 260 bytes gmem, 136 bytes cmem[3]
+  ptxas info    : Compiling entry function '_Z16set_photonWeightP6photonPfm' for 'sm_70'
+  ptxas info    : Function properties for _Z16set_photonWeightP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 20 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for __float2uint_rn
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z12print_photonP6photon
+      56 bytes stack frame, 32 bytes spill stores, 32 bytes spill loads
+  ptxas info    : Compiling entry function '_Z20print_photonPositionP6photonm' for 'sm_70'
+  ptxas info    : Function properties for _Z20print_photonPositionP6photonm
+      32 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 24 registers, 32 bytes cumulative stack size, 364 bytes cmem[0]
+  ptxas info    : Function properties for __float2int_rn
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z19output_addingKernelPfS_i' for 'sm_70'
+  ptxas info    : Function properties for _Z19output_addingKernelPfS_i
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 12 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000059e8_00000000_9_focusKernel_compute_75_cpp1_ii_3b34e8de9atomicAddEPjj
+      24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+  ptxas info    : Function properties for _Z19checkLensAcceptanceP6photonf
+      24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+  ptxas info    : Compiling entry function '_Z14set_photonDataP6photonPfji' for 'sm_70'
+  ptxas info    : Function properties for _Z14set_photonDataP6photonPfji
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 30 registers, 16 bytes cumulative stack size, 376 bytes cmem[0]
+  ptxas info    : Function properties for acosf
+      24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+  ptxas info    : Function properties for cudaGetDevice
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z19set_photonDirectionP6photonPfm' for 'sm_70'
+  ptxas info    : Function properties for _Z19set_photonDirectionP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 21 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for ceilf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z17set_focusDistancefi' for 'sm_70'
+  ptxas info    : Function properties for _Z17set_focusDistancefi
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 11 registers, 360 bytes cmem[0]
+  ptxas info    : Function properties for _ZN4dim3C1Ejjj
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z12focus4F_autoP6photonPfPj' for 'sm_70'
+  ptxas info    : Function properties for _Z12focus4F_autoP6photonPfPj
+      40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 38 registers, 168 bytes cumulative stack size, 376 bytes cmem[0]
+  ptxas info    : Function properties for __uAtomicAdd
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z13photonRefractP6photonf
+      80 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+  ptxas info    : Compiling entry function '_Z16print_photonDataP6photonm' for 'sm_70'
+  ptxas info    : Function properties for _Z16print_photonDataP6photonm
+      24 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 26 registers, 24 bytes cumulative stack size, 364 bytes cmem[0]
+  ptxas info    : Function properties for sincosf
+      48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaFuncGetAttributes
+      8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z16set_photonOriginP6float3Pfm' for 'sm_70'
+  ptxas info    : Function properties for _Z16set_photonOriginP6float3Pfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 30 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for sqrtf
+      16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+  ptxas info    : Function properties for _Z4ceilf
+      16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+  ptxas info    : Compiling entry function '_Z11set_photonsjfi' for 'sm_70'
+  ptxas info    : Function properties for _Z11set_photonsjfi
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 12 registers, 364 bytes cmem[0]
+  ptxas info    : Function properties for _ZN4dim3C2Ejjj
+      32 bytes stack frame, 28 bytes spill stores, 28 bytes spill loads
+  ptxas info    : Compiling entry function '_Z12addingKernelPfj' for 'sm_70'
+  ptxas info    : Function properties for _Z12addingKernelPfj
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 15 registers, 364 bytes cmem[0]
+  ptxas info    : Function properties for __fAtomicAdd
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z10checkPupilP6photonf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z21prepare_MCXphotonDataP6photon' for 'sm_70'
+  ptxas info    : Function properties for _Z21prepare_MCXphotonDataP6photon
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 28 registers, 16 bytes cumulative stack size, 360 bytes cmem[0]
+  ptxas info    : Function properties for expf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaDeviceGetAttribute
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z7focus4FP6photonPf' for 'sm_70'
+  ptxas info    : Function properties for _Z7focus4FP6photonPf
+      40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 38 registers, 168 bytes cumulative stack size, 368 bytes cmem[0]
+  ptxas info    : Function properties for fdividef
+      8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+  ptxas info    : Function properties for _Z10photonPropP6photonf
+      24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+  ptxas info    : Compiling entry function '_Z20print_focusConfigGPUv' for 'sm_70'
+  ptxas info    : Function properties for _Z20print_focusConfigGPUv
+      24 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 25 registers, 24 bytes cumulative stack size, 352 bytes cmem[0]
+  ptxas info    : Function properties for sinf
+      48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaMalloc
+      8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z18set_photonPositionP6photonPfm' for 'sm_70'
+  ptxas info    : Function properties for _Z18set_photonPositionP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 32 registers, 16 bytes cumulative stack size, 372 bytes cmem[0]
+  ptxas info    : Function properties for rsqrtf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z7illTestv' for 'sm_70'
+  ptxas info    : Function properties for _Z7illTestv
+      16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 24 registers, 16 bytes cumulative stack size, 352 bytes cmem[0]
+  ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000059e8_00000000_9_focusKernel_compute_75_cpp1_ii_3b34e8de9atomicAddEPff
+      24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+  ptxas info    : Function properties for _Z12detectPhotonP6photonPf
+      104 bytes stack frame, 68 bytes spill stores, 68 bytes spill loads
+CUDACOMPILE : ptxas warning : Conflicting options --device-debug and --generate-line-info specified, ignoring --generate-line-info option
+  ptxas info    : 260 bytes gmem, 136 bytes cmem[3]
+  ptxas info    : Compiling entry function '_Z16set_photonWeightP6photonPfm' for 'sm_75'
+  ptxas info    : Function properties for _Z16set_photonWeightP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 20 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for __float2uint_rn
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z12print_photonP6photon
+      56 bytes stack frame, 32 bytes spill stores, 32 bytes spill loads
+  ptxas info    : Compiling entry function '_Z20print_photonPositionP6photonm' for 'sm_75'
+  ptxas info    : Function properties for _Z20print_photonPositionP6photonm
+      32 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 24 registers, 32 bytes cumulative stack size, 364 bytes cmem[0]
+  ptxas info    : Function properties for __float2int_rn
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z19output_addingKernelPfS_i' for 'sm_75'
+  ptxas info    : Function properties for _Z19output_addingKernelPfS_i
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 12 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000059e8_00000000_9_focusKernel_compute_75_cpp1_ii_3b34e8de9atomicAddEPjj
+      24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+  ptxas info    : Function properties for _Z19checkLensAcceptanceP6photonf
+      24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+  ptxas info    : Compiling entry function '_Z14set_photonDataP6photonPfji' for 'sm_75'
+  ptxas info    : Function properties for _Z14set_photonDataP6photonPfji
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 30 registers, 16 bytes cumulative stack size, 376 bytes cmem[0]
+  ptxas info    : Function properties for acosf
+      24 bytes stack frame, 24 bytes spill stores, 24 bytes spill loads
+  ptxas info    : Function properties for cudaGetDevice
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z19set_photonDirectionP6photonPfm' for 'sm_75'
+  ptxas info    : Function properties for _Z19set_photonDirectionP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 21 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for ceilf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z17set_focusDistancefi' for 'sm_75'
+  ptxas info    : Function properties for _Z17set_focusDistancefi
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 11 registers, 360 bytes cmem[0]
+  ptxas info    : Function properties for _ZN4dim3C1Ejjj
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z12focus4F_autoP6photonPfPj' for 'sm_75'
+  ptxas info    : Function properties for _Z12focus4F_autoP6photonPfPj
+      40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 38 registers, 168 bytes cumulative stack size, 376 bytes cmem[0]
+  ptxas info    : Function properties for __uAtomicAdd
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z13photonRefractP6photonf
+      80 bytes stack frame, 36 bytes spill stores, 36 bytes spill loads
+  ptxas info    : Compiling entry function '_Z16print_photonDataP6photonm' for 'sm_75'
+  ptxas info    : Function properties for _Z16print_photonDataP6photonm
+      24 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 26 registers, 24 bytes cumulative stack size, 364 bytes cmem[0]
+  ptxas info    : Function properties for sincosf
+      48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaFuncGetAttributes
+      8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z16set_photonOriginP6float3Pfm' for 'sm_75'
+  ptxas info    : Function properties for _Z16set_photonOriginP6float3Pfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 30 registers, 372 bytes cmem[0]
+  ptxas info    : Function properties for sqrtf
+      16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+  ptxas info    : Function properties for _Z4ceilf
+      16 bytes stack frame, 12 bytes spill stores, 12 bytes spill loads
+  ptxas info    : Compiling entry function '_Z11set_photonsjfi' for 'sm_75'
+  ptxas info    : Function properties for _Z11set_photonsjfi
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 12 registers, 364 bytes cmem[0]
+  ptxas info    : Function properties for _ZN4dim3C2Ejjj
+      32 bytes stack frame, 28 bytes spill stores, 28 bytes spill loads
+  ptxas info    : Compiling entry function '_Z12addingKernelPfj' for 'sm_75'
+  ptxas info    : Function properties for _Z12addingKernelPfj
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 15 registers, 364 bytes cmem[0]
+  ptxas info    : Function properties for __fAtomicAdd
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for _Z10checkPupilP6photonf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z21prepare_MCXphotonDataP6photon' for 'sm_75'
+  ptxas info    : Function properties for _Z21prepare_MCXphotonDataP6photon
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 28 registers, 16 bytes cumulative stack size, 360 bytes cmem[0]
+  ptxas info    : Function properties for expf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaDeviceGetAttribute
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z7focus4FP6photonPf' for 'sm_75'
+  ptxas info    : Function properties for _Z7focus4FP6photonPf
+      40 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 38 registers, 168 bytes cumulative stack size, 368 bytes cmem[0]
+  ptxas info    : Function properties for fdividef
+      8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+  ptxas info    : Function properties for _Z10photonPropP6photonf
+      24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+  ptxas info    : Compiling entry function '_Z20print_focusConfigGPUv' for 'sm_75'
+  ptxas info    : Function properties for _Z20print_focusConfigGPUv
+      24 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 25 registers, 24 bytes cumulative stack size, 352 bytes cmem[0]
+  ptxas info    : Function properties for sinf
+      48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaMalloc
+      8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z18set_photonPositionP6photonPfm' for 'sm_75'
+  ptxas info    : Function properties for _Z18set_photonPositionP6photonPfm
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 32 registers, 16 bytes cumulative stack size, 372 bytes cmem[0]
+  ptxas info    : Function properties for rsqrtf
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+      0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Compiling entry function '_Z7illTestv' for 'sm_75'
+  ptxas info    : Function properties for _Z7illTestv
+      16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+  ptxas info    : Used 24 registers, 16 bytes cumulative stack size, 352 bytes cmem[0]
+  ptxas info    : Function properties for _ZN79_INTERNAL_57_tmpxft_000059e8_00000000_9_focusKernel_compute_75_cpp1_ii_3b34e8de9atomicAddEPff
+      24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+  ptxas info    : Function properties for _Z12detectPhotonP6photonPf
+      104 bytes stack frame, 68 bytes spill stores, 68 bytes spill loads
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(19): warning C4005: 'DEBUG': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(49): warning C4005: 'CUDA_ERROR_CHECK': macro redefinition
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(914): warning C4002: too many arguments for function-like macro invocation 'CUDA_ERROR_CHECK'
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(939): warning : a __constant__ variable "fcfg" cannot be directly read in a host function
+  
+CUDACOMPILE : nvcc warning : '--device-debug (-G)' overrides '--generate-line-info (-lineinfo)'
+  focusKernel.cu
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(82): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(110): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned long', possible loss of data
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(374): warning C4018: '<': signed/unsigned mismatch
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(375): warning C4018: '>': signed/unsigned mismatch
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(727): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+  D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(727): note: consider using '%zd' in the format string
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(728): warning C4244: '=': conversion from 'double' to 'size_t', possible loss of data
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(731): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(734): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(744): warning C4778: 'printf' : unterminated format string '%z\n'
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(744): warning C4474: 'printf' : too many arguments passed for format string
+  D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(744): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(770): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+  D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(770): note: consider using '%zd' in the format string
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(814): warning C4018: '<': signed/unsigned mismatch
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(752): warning C4101: 'photonsOrigin': unreferenced local variable
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(877): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+  D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(877): note: consider using '%zu' in the format string
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(908): warning C4018: '<': signed/unsigned mismatch
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(874): warning C4101: 'focused': unreferenced local variable
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(870): warning C4101: 'tmp': unreferenced local variable
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(859): warning C4101: 'nChunks': unreferenced local variable
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning C4101: 'remainingPhotons': unreferenced local variable
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(872): warning C4101: 'Nphotons': unreferenced local variable
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(860): warning C4101: 'photonsPerChunk': unreferenced local variable
+D:/Code/MonteCarloFocus/MonteCarloFocus/src/focusKernel.cu(871): warning C4101: 'dataFile': unreferenced local variable
+  focus_utils.c
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(60,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(61,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(62,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(63,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(64,1): warning C4996:  'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1323): message :  see declaration of 'itoa'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(65,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(66,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(84,34): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(115,29): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(119,29): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(132,27): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(136,27): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(145,35): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(170,36): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(176,31): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(177,31): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(193,34): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(81,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(87,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(92,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(99,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(101,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(108,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(201,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(203,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(213,8): warning C4101:  'arg': unreferenced local variable
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(275,36): warning C4090:  '=': different 'const' qualifiers
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(277,19): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[100]'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(277,19): warning C4024:  'fgets': different types for formal and actual parameter 1
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(299,15): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[200]'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(299,15): warning C4024:  'strcpy': different types for formal and actual parameter 1
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(247,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(248,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(252,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(253,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(255,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(260,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message :  see declaration of 'fopen'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(272,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1197): message :  see declaration of 'fscanf'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(278,1): warning C4996:  'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(440): message :  see declaration of 'strtok'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(281,1): warning C4996:  'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(440): message :  see declaration of 'strtok'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(299,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(301,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(302,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(303,1): warning C4996:  'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1323): message :  see declaration of 'itoa'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(304,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(305,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(306,1): warning C4996:  'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1323): message :  see declaration of 'itoa'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(307,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(310,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(311,1): warning C4996:  'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1323): message :  see declaration of 'itoa'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(312,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(316,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(296,14): warning C4101:  'dataFile': unreferenced local variable
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(341,9): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(341,9): message :  consider using '%zd' in the format string
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(348,32): warning C4047:  '=': 'float *' differs in levels of indirection from 'float **'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(333,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message :  see declaration of 'fopen'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(331,9): warning C4101:  'number': unreferenced local variable
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(383,9): warning C4477:  'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(383,9): message :  consider using '%zd' in the format string
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(363,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message :  see declaration of 'fopen'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(360,6): warning C4101:  'colcount': unreferenced local variable
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(359,9): warning C4101:  'number': unreferenced local variable
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(435,17): warning C4090:  'function': different 'const' qualifiers
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(436,17): warning C4090:  'function': different 'const' qualifiers
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(435,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(436,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(439,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message :  see declaration of 'fopen'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(429,7): warning C4101:  'tmp': unreferenced local variable
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(427,9): warning C4101:  'number': unreferenced local variable
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(466,1): warning C4996:  'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message :  see declaration of 'strcpy'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(467,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(468,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(469,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(470,1): warning C4996:  'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1323): message :  see declaration of 'itoa'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(471,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(472,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(473,1): warning C4996:  'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1323): message :  see declaration of 'itoa'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(474,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(477,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(478,1): warning C4996:  'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1323): message :  see declaration of 'itoa'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(479,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(481,1): warning C4996:  'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message :  see declaration of 'strcat'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(486,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message :  see declaration of 'fopen'
+D:\Code\MonteCarloFocus\MonteCarloFocus\src\focus_utils.c(206): warning C4715:  'parseInput': not all control paths return a value
+  MCfocusing.vcxproj -> D:\Code\MonteCarloFocus\MonteCarloFocus\VSproject\MCfocusing\x64\Debug\MCfocusing.lib
+  copy "D:\Code\MonteCarloFocus\MonteCarloFocus\VSproject\MCfocusing\x64\Debug\MCfocusing.lib" "D:\Code\MonteCarloFocus\MonteCarloSPIM\VSproject\x64\Debug"
+          1 archivo(s) copiado(s).

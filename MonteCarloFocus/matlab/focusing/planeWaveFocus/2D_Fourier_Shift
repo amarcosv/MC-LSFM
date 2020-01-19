@@ -1,0 +1,20 @@
+in=peaks(200); %// Define input signal
+H=fftshift(fft2(in)); %// Compute 2D Fourier Transform
+x0=-35; %// Define shifts
+y0=-50;
+
+%// Define shift in frequency domain
+[xF,yF] = meshgrid(-100:99,-100:99);
+
+%// Perform the shift
+H=H.*exp(-1i*2*pi.*(xF*x0+yF*y0)/200);
+
+%// Find the inverse Fourier Transform
+IF_image=ifft2(ifftshift(H));
+
+%// Show the images
+figure;
+subplot(1,2,1);
+imshow(in);
+subplot(1,2,2);
+imshow(real(IF_image));

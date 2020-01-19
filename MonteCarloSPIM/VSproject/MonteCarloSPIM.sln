@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MCfocusing", "..\..\MonteCarloFocus\VSproject\MCfocusing\MCfocusing.vcxproj", "{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mcx", "MCX\mcx.vcxproj", "{BC3B6521-235A-41EA-8BE5-3913CA615E18}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MonteCarloSPIM", "MonteCarloSPIM\MonteCarloSPIM.vcxproj", "{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18} = {BC3B6521-235A-41EA-8BE5-3913CA615E18}
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D} = {64B61F91-86D6-49EB-BEDA-5AD1954BD36D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Custom|x64 = Debug_Custom|x64
+		Debug_Custom|x86 = Debug_Custom|x86
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Debug_Custom|x64.ActiveCfg = Debug|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Debug_Custom|x64.Build.0 = Debug|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Debug_Custom|x86.ActiveCfg = Release|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Debug_Custom|x86.Build.0 = Release|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Debug|x64.ActiveCfg = Debug|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Debug|x64.Build.0 = Debug|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Debug|x86.ActiveCfg = Debug|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Release|x64.ActiveCfg = Release|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Release|x64.Build.0 = Release|x64
+		{64B61F91-86D6-49EB-BEDA-5AD1954BD36D}.Release|x86.ActiveCfg = Release|x64
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug_Custom|x64.ActiveCfg = Debug_Custom|x64
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug_Custom|x64.Build.0 = Debug_Custom|x64
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug_Custom|x86.ActiveCfg = Debug_Custom|Win32
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug_Custom|x86.Build.0 = Debug_Custom|Win32
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug|x64.ActiveCfg = Debug_Custom|x64
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug|x64.Build.0 = Debug_Custom|x64
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Debug|x86.Build.0 = Debug|Win32
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Release|x64.ActiveCfg = Release|x64
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Release|x64.Build.0 = Release|x64
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Release|x86.ActiveCfg = Release|Win32
+		{BC3B6521-235A-41EA-8BE5-3913CA615E18}.Release|x86.Build.0 = Release|Win32
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug_Custom|x64.ActiveCfg = Debug|x64
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug_Custom|x64.Build.0 = Debug|x64
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug_Custom|x86.ActiveCfg = Debug|Win32
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug_Custom|x86.Build.0 = Debug|Win32
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug|x64.ActiveCfg = Debug|x64
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug|x64.Build.0 = Debug|x64
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Debug|x86.Build.0 = Debug|Win32
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Release|x64.ActiveCfg = Release|x64
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Release|x64.Build.0 = Release|x64
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Release|x86.ActiveCfg = Release|Win32
+		{2F8D3DDA-7573-4C9D-B773-BED894B12E3A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FC461F6-DD44-426F-923C-BB6CBF90BDAB}
+	EndGlobalSection
+EndGlobal

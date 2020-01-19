@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>--session test --input D:\MCXworkshop19\MCXStudio\Output\mcxsessions\test\test.json --root D:\MCXworkshop19\MCXStudio\Output\mcxsessions\test --outputformat mc2 --gpu 1  --photon 5000000 --normalize 1 --save2pt 1 --reflect 0 --savedet 1 --unitinmm 0.10 --seed 1648335518 --saveseed 0 --specular 0 --array 0 --dumpmask 0 --repeat 1 -W DXVWL --maxdetphoton 10000000 --bc aaaaaa</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Custom|x64'">
+    <LocalDebuggerCommandArguments>
+    </LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
